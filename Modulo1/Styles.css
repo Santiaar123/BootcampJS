@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #212429;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+/* Header y Navbar */
+
+.navbar {
+  background-color: #ffffff;
+  padding: 16px 3%;
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.items-logo {
+  display: flex;
+  gap: 16px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #212429;
+  font-size: 16px;
+}
+
+main {
+  padding-top: 100px;
+  margin: 16px;
+}
+
+h1 {
+  text-align: left;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+/* PRoductos */
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.producto {
+  background-color: #ffffff;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+.producto p {
+  font-size: 14px;
+  color: #212429;
+}
+
+.precio {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/* footer */
+
+footer {
+  background-color: #212429;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+  font-size: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 920px) {
+  .nav-bar {
+    width: 100%;
+    padding: 12px;
+  }
+  .productos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+}
